@@ -1,0 +1,34 @@
+/* App-level styles */
+.sidebar-link {
+    @apply flex items-center gap-3 px-4 py-2.5 text-sm text-zinc-400 hover:text-white hover:bg-white/5 transition-all duration-200 rounded-sm;
+}
+.sidebar-link.active {
+    @apply text-[#00ff84] bg-[#00ff84]/5 border-l-2 border-[#00ff84];
+}
+.stat-card {
+    @apply bg-card border border-border/50 rounded-sm p-4 hover:border-[#00ff84]/30 transition-colors duration-300;
+}
+.data-table {
+    @apply w-full text-sm;
+}
+.data-table th {
+    @apply text-left text-[10px] uppercase tracking-widest text-zinc-500 font-sans pb-3 border-b border-border/40;
+}
+.data-table td {
+    @apply py-3 border-b border-border/40 text-zinc-300;
+}
+.data-table tr:hover td {
+    @apply bg-white/[0.02];
+}
+.badge-status {
+    @apply inline-flex items-center px-2 py-0.5 text-[10px] uppercase font-bold tracking-wider rounded-none;
+}
+.badge-pending { @apply bg-amber-500/10 text-amber-400; }
+.badge-in-transit { @apply bg-blue-500/10 text-blue-400; }
+.badge-customs { @apply bg-purple-500/10 text-purple-400; }
+.badge-delivered { @apply bg-[#00ff84]/10 text-[#00ff84]; }
+.badge-cancelled { @apply bg-red-500/10 text-red-400; }
+.badge-draft { @apply bg-zinc-500/10 text-zinc-400; }
+.badge-sent { @apply bg-blue-500/10 text-blue-400; }
+.badge-paid { @apply bg-[#00ff84]/10 text-[#00ff84]; }
+.badge-overdue { @apply bg-red-500/10 text-red-400; }

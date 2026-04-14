@@ -1,0 +1,126 @@
+{
+  "identity": {
+    "name": "Leiva's Import SAAS",
+    "persona": "The Tactical Logistician",
+    "aesthetic": "Dark Industrial Futurism",
+    "core_values": ["Precision", "Visibility", "Speed", "Control"],
+    "archetype": "ARCHETYPE 7: ELECTRIC & NEON (High Contrast Variant)",
+    "description": "A high-performance command center for global trade. Dark backgrounds to reduce eye strain during long shifts, pierced by neon green data points for instant status recognition."
+  },
+  "typography": {
+    "primary_font": "Barlow Condensed",
+    "secondary_font": "Inter",
+    "mono_font": "JetBrains Mono",
+    "usage": {
+      "headings": "font-barlow font-bold uppercase tracking-tight",
+      "body": "font-sans text-zinc-300",
+      "data_cells": "font-mono text-xs tracking-wide",
+      "labels": "font-sans text-[10px] uppercase tracking-widest text-zinc-500"
+    },
+    "installation": "Must install '@fontsource/barlow-condensed', '@fontsource/inter', '@fontsource/jetbrains-mono' or add via Google Fonts in index.html"
+  },
+  "colors": {
+    "mode": "dark",
+    "palette": {
+      "primary": {
+        "DEFAULT": "#00ff84",
+        "foreground": "#000000",
+        "hover": "#33ff9d",
+        "dim": "rgba(0, 255, 132, 0.1)"
+      },
+      "background": {
+        "DEFAULT": "#050505",
+        "paper": "#09090b",
+        "subtle": "#18181b"
+      },
+      "border": {
+        "DEFAULT": "#27272a",
+        "active": "#00ff84"
+      },
+      "status": {
+        "success": "#00ff84",
+        "warning": "#f59e0b",
+        "error": "#ef4444",
+        "info": "#3b82f6"
+      }
+    },
+    "css_vars_override": {
+      "--background": "0 0% 2%",
+      "--foreground": "0 0% 98%",
+      "--card": "0 0% 3.5%",
+      "--card-foreground": "0 0% 98%",
+      "--popover": "0 0% 3.5%",
+      "--popover-foreground": "0 0% 98%",
+      "--primary": "151 100% 50%",
+      "--primary-foreground": "0 0% 0%",
+      "--secondary": "240 3.7% 15.9%",
+      "--secondary-foreground": "0 0% 98%",
+      "--muted": "240 3.7% 15.9%",
+      "--muted-foreground": "240 5% 64.9%",
+      "--accent": "240 3.7% 15.9%",
+      "--accent-foreground": "0 0% 98%",
+      "--destructive": "0 62.8% 30.6%",
+      "--destructive-foreground": "0 0% 98%",
+      "--border": "240 3.7% 15.9%",
+      "--input": "240 3.7% 15.9%",
+      "--ring": "151 100% 50%",
+      "--radius": "0.25rem"
+    }
+  },
+  "layout": {
+    "spacing_scale": "conservative",
+    "grid_system": "Bento Grid",
+    "container_style": "card-less",
+    "structure": {
+      "dashboard": "grid grid-cols-1 md:grid-cols-4 gap-4 p-6",
+      "sidebar": "fixed left-0 top-0 h-full w-64 bg-background border-r border-border z-50 hidden md:flex flex-col",
+      "main_content": "md:pl-64 min-h-screen bg-background text-foreground"
+    },
+    "border_radius": "rounded-sm"
+  },
+  "components": {
+    "buttons": "rounded-sm font-bold uppercase tracking-wide hover:shadow-[0_0_10px_rgba(0,255,132,0.3)] transition-all duration-300",
+    "cards": "bg-card border border-border/50 rounded-sm shadow-none hover:border-primary/30 transition-colors",
+    "inputs": "bg-secondary/50 border-input rounded-sm focus:ring-1 focus:ring-primary focus:border-primary font-mono text-sm",
+    "tables": "w-full text-sm border-collapse [&_tr]:border-b [&_tr]:border-border/40 hover:[&_tr]:bg-white/5",
+    "badges": "rounded-none px-2 py-0.5 text-[10px] uppercase font-bold tracking-wider"
+  },
+  "visual_enhancers": {
+    "gradients": "None. Flat colors or subtle radial glow for active states.",
+    "textures": "Subtle noise overlay (opacity 0.02) on background to reduce banding.",
+    "borders": "1px solid border-zinc-800. Active elements get 'The Tracing Beam' effect (green glow).",
+    "shadows": "Hard shadows or glow effects. No soft diffuse material shadows."
+  },
+  "image_urls": {
+    "login_bg": "https://images.unsplash.com/photo-1766678067437-bcf0c9006cd1?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1Mjh8MHwxfHNlYXJjaHwxfHxjYXJnbyUyMHNoaXAlMjBuaWdodCUyMG9jZWFuJTIwY29udGFpbmVyfGVufDB8fHx8MTc3MzUwODU5NXww&ixlib=rb-4.1.0&q=85",
+    "dashboard_widget_bg": "https://images.unsplash.com/photo-1762228015766-be0e31621a3a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1Mjh8MHwxfHNlYXJjaHw0fHxjYXJnbyUyMHNoaXAlMjBuaWdodCUyMG9jZWFuJTIwY29udGFpbmVyfGVufDB8fHx8MTc3MzUwODU5NXww&ixlib=rb-4.1.0&q=85",
+    "warehouse_hero": "https://images.unsplash.com/photo-1766021736631-d2f15082aa59?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzl8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBsb2dpc3RpY3MlMjB3YXJlaG91c2UlMjBpbnRlcmlvciUyMGRhcmslMjBhZXN0aGV0aWN8ZW58MHx8fHwxNzczNTA4NTk2fDA&ixlib=rb-4.1.0&q=85"
+  },
+  "assets": {
+    "logo_text": "LEIVA'S IMPORT",
+    "logo_subtext": "CONSULTING",
+    "icons": "Lucide React (Square, sharp variants preferred, e.g., 'Container', 'Ship', 'FileText', 'Activity')"
+  },
+  "content_strategy": {
+    "language": "Spanish (es-ES)",
+    "tone": "Professional, Direct, Data-Centric",
+    "date_format": "DD/MM/YYYY",
+    "currency": "EUR (€)"
+  },
+  "instructions_to_main_agent": [
+    "1. UPDATE THEME: Modify /app/frontend/src/index.css with the provided CSS variables in 'colors.css_vars_override'. This is CRITICAL for the neon green/dark mode look.",
+    "2. INSTALL FONTS: Use Google Fonts CDN in index.html for Barlow Condensed (Weights: 400, 600, 700) and JetBrains Mono.",
+    "3. LAYOUT: Implement a responsive Sidebar Layout (Shell). The sidebar must be collapsible on mobile.",
+    "4. COMPONENTS: Do not use rounded-xl or rounded-2xl. Force 'rounded-sm' or 'rounded-md' in tailwind config or utility classes.",
+    "5. CHARTS: Use Recharts (via shadcn/charts if available) with the custom green palette. Chart lines should be thin (strokeWidth={1.5}).",
+    "6. TABLES: Build a reusable DataTable component that supports density. Logistics data is heavy; minimal padding is preferred.",
+    "7. LANGUAGE: All hardcoded text in the UI must be in Spanish.",
+    "8. AUTH: Create a Login page with the 'login_bg' image as a side cover or background overlay."
+  ],
+  "universal_guidelines": [
+    "Don't use gradients for backgrounds. Use solid deep blacks/grays.",
+    "Use 'Neon Green' (#00ff84) sparingly for CTAs and active states only. Don't overuse it.",
+    "Inputs should look like 'terminal' inputs or technical fields (dark bg, light text, monospaced).",
+    "All interactive elements must have data-testid attributes."
+  ]
+}
