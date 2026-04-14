@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import { Button } from "../components/ui/button";
 import { Input } from "../components/ui/input";
@@ -96,6 +96,18 @@ const ContactForm = ({ source = "landing" }) => {
 
 const LandingPage = () => {
   const navigate = useNavigate();
+
+    // SEO: Set dynamic meta tags for landing page
+    useEffect(() => {
+          document.title = "Importar desde China sin complicaciones | Leiva's Import";
+          const metaDesc = document.querySelector('meta[name="description"]');
+          if (metaDesc) {
+                  metaDesc.setAttribute('content', 'Agencia especializada en importacion desde China: logistica internacional, control de calidad, auditorias de fabrica y certificaciones europeas. Solicita tu presupuesto sin compromiso. Respuesta en 24h.');
+          }
+          return () => {
+                  document.title = "Leiva's Import";
+          };
+    }, []);
 
   return (
     <div className="min-h-screen bg-[#0a0a0a] text-white" data-testid="landing-page">
