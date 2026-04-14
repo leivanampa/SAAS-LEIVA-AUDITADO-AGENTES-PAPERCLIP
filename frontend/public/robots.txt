@@ -1,0 +1,29 @@
+# robots.txt para leivasimport.com
+# Permite a todos los bots de motores de busqueda indexar el sitio
+
+User-agent: *
+Allow: /
+
+# Evitar que se indexen rutas privadas del dashboard
+Disallow: /dashboard
+Disallow: /crm
+Disallow: /shipments
+Disallow: /documents
+Disallow: /invoices
+Disallow: /imports
+Disallow: /cost-estimator
+Disallow: /accounting
+Disallow: /treasury
+Disallow: /warehouses
+Disallow: /profitability
+Disallow: /automations
+Disallow: /users
+Disallow: /agents
+Disallow: /control-center
+Disallow: /settings
+Disallow: /inbox
+Disallow: /portal
+Disallow: /login
+
+# Sitemap
+Sitemap: https://leivasimport.com/sitemap.xml
